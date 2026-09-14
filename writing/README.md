@@ -7,7 +7,7 @@
 ```text
 writing/
 ├── README.md
-├── METADATA_POLICY.md # 来源、日期与可复制性规范
+├── METADATA_POLICY.md # 来源、日期、双语与可复制性规范
 ├── 00-core/          # 所有写作任务共用的基础规则与任务规格
 ├── 01-style/         # 自然写作、风格控制、Style Profile
 ├── 02-long-form/     # 教科书、专著、长文、博客文章
@@ -29,6 +29,19 @@ writing/
 - `Last updated`：Prompt 内容最后修改日期
 
 因此在 GitHub 上直接点击 Prompt 代码块右上角 **Copy**，复制到的只有 Prompt 本体，不会带上来源、URL 或日期。
+
+### 中文 / English
+
+仓库默认优先保证**中文版可直接使用**。
+
+如果一个 Prompt 同时保留中文和英文版本：
+
+- `## 中文版（直接复制）` 下只放一个纯中文 Prompt 代码块
+- `## English version (copy directly)` 下只放一个纯英文 Prompt 代码块
+- 两种语言不放在同一个代码块里
+- 来源、日期、翻译说明和维护信息全部留在代码块外
+
+因此复制中文版时不会夹带英文，复制英文版时也不会夹带中文或任何元数据。
 
 完整规范见 [`METADATA_POLICY.md`](METADATA_POLICY.md)，完整来源账本见 [`90-research/sources.md`](90-research/sources.md)。
 
