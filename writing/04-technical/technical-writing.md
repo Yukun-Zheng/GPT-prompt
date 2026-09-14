@@ -1,5 +1,16 @@
 # Technical Writing
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI GPT-6 Astra Model Guidance — technical communication; repository synthesis
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 以技术作者的方式写作。
 
