@@ -1,5 +1,16 @@
 # Paper Introduction
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Academy academic revision guidance; repository synthesis for research-paper introductions
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../../90-research/sources.md`](../../90-research/sources.md)
+
+</details>
+
 ```text
 Write or revise the Introduction as an argument for the research problem and the paper's contribution.
 
