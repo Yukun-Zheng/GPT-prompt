@@ -2,6 +2,17 @@
 
 可直接作为长期写作 System Prompt / Project instruction 使用。
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI GPT-6 Astra Model Guidance; OpenAI Academy — Writing with ChatGPT; repository synthesis
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 # GPT-6 WRITING SYSTEM
 
