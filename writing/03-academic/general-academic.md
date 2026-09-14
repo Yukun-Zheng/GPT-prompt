@@ -2,6 +2,17 @@
 
 适合论文、论文段落、课程论文和研究报告 revision。
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Academy — Draft and Revise Academic Documents; Improve Your Papers Without Losing Your Voice; repository synthesis
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 你现在充当学术编辑，而不是论文代写者。
 
