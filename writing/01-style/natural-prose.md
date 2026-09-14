@@ -2,6 +2,17 @@
 
 目标不是“骗 AI detector”，而是减少模板腔、空话和机械节奏。
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI GPT-6 Astra Model Guidance; OpenAI Academy writing guidance; selected community patterns; repository synthesis
+- Status: official-derived + community-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 【自然写作规则】
 
