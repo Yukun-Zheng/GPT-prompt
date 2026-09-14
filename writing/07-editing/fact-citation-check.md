@@ -1,5 +1,16 @@
 # Fact & Citation Check
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Academy — Writing with ChatGPT; Draft and Revise Academic Documents; repository synthesis
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 对当前文本执行独立的事实与引用检查，不要把“读起来合理”当成“事实正确”。
 
