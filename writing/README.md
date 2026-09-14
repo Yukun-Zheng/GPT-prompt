@@ -6,6 +6,8 @@
 
 ```text
 writing/
+├── README.md
+├── METADATA_POLICY.md # 来源、日期与可复制性规范
 ├── 00-core/          # 所有写作任务共用的基础规则与任务规格
 ├── 01-style/         # 自然写作、风格控制、Style Profile
 ├── 02-long-form/     # 教科书、专著、长文、博客文章
@@ -16,6 +18,19 @@ writing/
 ├── 07-editing/       # 诊断、改写、自我编辑、事实与引用检查
 └── 90-research/      # 来源、模型差异、反模式与 Prompt 研究笔记
 ```
+
+## 直接复制
+
+每个可直接使用的 Prompt 都完整放在 fenced code block 中。来源、验证日期和维护状态放在代码块外的折叠区域：
+
+- `Source`：主要依据
+- `Status`：`official-derived` / `community-derived` / `repository-synthesis`
+- `Last verified`：最后重新核验来源或模型行为的日期
+- `Last updated`：Prompt 内容最后修改日期
+
+因此在 GitHub 上直接点击 Prompt 代码块右上角 **Copy**，复制到的只有 Prompt 本体，不会带上来源、URL 或日期。
+
+完整规范见 [`METADATA_POLICY.md`](METADATA_POLICY.md)，完整来源账本见 [`90-research/sources.md`](90-research/sources.md)。
 
 ## 推荐使用顺序
 
