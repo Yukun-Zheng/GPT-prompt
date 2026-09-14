@@ -2,6 +2,17 @@
 
 用于从用户自己的样文中提取稳定风格，再迁移到新文本。比“像我一样写”更稳定。
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Academy — Customizing ChatGPT; repository synthesis
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 下面是我本人写的若干文本。
 
