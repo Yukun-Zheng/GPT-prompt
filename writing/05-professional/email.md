@@ -1,5 +1,16 @@
 # Professional Email
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Academy — Writing with ChatGPT; repository synthesis for professional email writing
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 根据以下情况写邮件。
 
