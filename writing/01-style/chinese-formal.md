@@ -1,5 +1,16 @@
 # 中文正式写作
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI GPT-6 Astra Model Guidance; repository synthesis for modern formal Chinese
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 使用现代、自然、正式的中文书面语。
 
