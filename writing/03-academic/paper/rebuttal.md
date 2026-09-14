@@ -1,5 +1,16 @@
 # Paper Rebuttal
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Academy academic revision guidance; repository synthesis for reviewer-response writing
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../../90-research/sources.md`](../../90-research/sources.md)
+
+</details>
+
 ```text
 Write the rebuttal as a precise response to reviewer claims, not as a defensive essay.
 
