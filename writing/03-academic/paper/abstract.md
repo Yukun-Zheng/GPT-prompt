@@ -1,5 +1,16 @@
 # Paper Abstract
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Academy academic revision guidance; repository synthesis for research-paper abstracts
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../../90-research/sources.md`](../../90-research/sources.md)
+
+</details>
+
 ```text
 Write or revise the abstract as a compact representation of the paper rather than a generic introduction.
 
