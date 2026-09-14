@@ -1,5 +1,16 @@
 # Paper Method
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Academy academic revision guidance; repository synthesis for reproducible technical method writing
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../../90-research/sources.md`](../../90-research/sources.md)
+
+</details>
+
 ```text
 Write or revise the Method section so that a technically competent reader could reconstruct the approach.
 
