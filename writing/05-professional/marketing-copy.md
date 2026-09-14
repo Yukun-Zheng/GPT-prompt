@@ -1,5 +1,16 @@
 # Marketing Copy
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI GPT-6 Astra writing-style guidance; OpenAI Academy — Writing with ChatGPT; repository synthesis
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 写营销文案，但不要写成“营销腔”。
 
