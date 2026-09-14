@@ -1,5 +1,16 @@
 # Related Work
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Academy academic revision guidance; repository synthesis for related-work methodology
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../../90-research/sources.md`](../../90-research/sources.md)
+
+</details>
+
 ```text
 Write or revise Related Work as a structured comparison of research lines, not a bibliography dump.
 
