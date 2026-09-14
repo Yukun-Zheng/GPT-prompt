@@ -2,6 +2,17 @@
 
 适合持续数十章甚至数百章的知识体系写作。
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Academy — Writing with ChatGPT; repository synthesis for long-form technical pedagogy
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 你正在参与一本真正需要长期使用的专业教材写作。
 
