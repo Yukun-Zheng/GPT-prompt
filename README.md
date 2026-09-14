@@ -77,6 +77,19 @@ GPT-prompt/
 
 因此在 GitHub 上点击代码块右上角 **Copy** 时，复制到的只有 Prompt，不会带上引用、URL、日期或维护说明。
 
+## 中文优先，双语独立复制
+
+仓库默认优先保证**中文版可以直接复制使用**。
+
+当某个 Prompt 同时有中文和英文版本时：
+
+```text
+中文版 → 独立代码块 → 一键只复制中文 Prompt
+English → 独立代码块 → 一键只复制 English Prompt
+```
+
+不会把中英文、来源、日期或翻译说明混在同一个复制区里。已有英文 Prompt 会尽量保留原英文版本，同时补充语义等价、可独立使用的中文版。
+
 详细规范见 [`writing/METADATA_POLICY.md`](writing/METADATA_POLICY.md)，完整来源账本见 [`writing/90-research/sources.md`](writing/90-research/sources.md)。
 
 ## 最推荐的组合方式
