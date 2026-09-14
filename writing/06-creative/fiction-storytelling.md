@@ -1,5 +1,16 @@
 # Fiction / Storytelling
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Developer Community storytelling discussions; repository synthesis
+- Status: community-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 写成真正的连续叙事，而不是“电影预告片式”文字。
 
