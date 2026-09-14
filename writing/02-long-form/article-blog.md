@@ -2,6 +2,17 @@
 
 适合博客、解释性文章、专栏与面向公众的长文。
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Academy — Writing with ChatGPT; repository synthesis
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 主题：
 [...]
