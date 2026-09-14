@@ -11,6 +11,7 @@ GPT-prompt/
 ├── README.md
 └── writing/
     ├── README.md
+    ├── METADATA_POLICY.md
     ├── 00-core/
     │   ├── system-prompt.md
     │   └── task-specification.md
@@ -62,6 +63,21 @@ GPT-prompt/
 - **06-creative**：小说、故事和连续叙事。
 - **07-editing**：与生成初稿分离的诊断、revision、事实/引用核验。
 - **90-research**：Prompt 来源、模型行为差异、反模式研究；不作为日常直接调用入口。
+
+## Source & freshness，不妨碍复制
+
+每个可直接使用的 Prompt 文件可以标注：
+
+- `Source`：主要来源或综合依据
+- `Status`：`official-derived` / `community-derived` / `repository-synthesis`
+- `Last verified`：最后一次重新核验来源、模型 guidance 或相关行为的日期
+- `Last updated`：Prompt 内容最后修改日期
+
+这些信息全部放在 Prompt 代码块之外，并优先折叠在 `<details>` 中。**Prompt 本体始终完整放在 fenced code block 内。**
+
+因此在 GitHub 上点击代码块右上角 **Copy** 时，复制到的只有 Prompt，不会带上引用、URL、日期或维护说明。
+
+详细规范见 [`writing/METADATA_POLICY.md`](writing/METADATA_POLICY.md)，完整来源账本见 [`writing/90-research/sources.md`](writing/90-research/sources.md)。
 
 ## 最推荐的组合方式
 
