@@ -43,6 +43,20 @@ English prompt body
 
 语言标题、来源、日期、说明和链接一律留在代码块外。这样点击任一代码块右上角的 **Copy**，复制结果只包含该语言的 Prompt 本体。
 
+## 目录命名
+
+目录统一采用 `English-中文` 的双语命名方式，例如：
+
+```text
+writing-写作/
+03-academic-学术/
+paper-论文各部分/
+07-editing-编辑校对/
+90-research-来源研究/
+```
+
+英文部分负责稳定、可搜索的路径语义；中文部分负责让目录用途无需翻译即可理解。目录名本身不进入 Prompt 代码块，因此不会影响一键复制。
+
 ## 规则
 
 1. 来源、日期、验证状态永远放在 Prompt 代码块之外。
@@ -56,7 +70,7 @@ English prompt body
 9. `official-derived`：主要原则可以追溯到 OpenAI 官方 / first-party 材料，但仓库文本通常经过归纳、翻译或重组，不表示官方逐字 Prompt。
 10. `community-derived`：主要来自公开社区实践并经筛选。
 11. `repository-synthesis`：仓库根据多个来源、写作方法与具体使用场景综合形成。
-12. 更完整的来源列表统一维护在 `90-research/sources.md`；专项文件只保留简短来源标签，避免影响复制体验。
+12. 更完整的来源列表统一维护在 `90-research-来源研究/sources.md`；专项文件只保留简短来源标签，避免影响复制体验。
 
 ## 日期语义
 
