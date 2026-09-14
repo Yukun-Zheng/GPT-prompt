@@ -2,6 +2,17 @@
 
 先诊断，再修改。适合重要原稿。
 
+<details>
+<summary>Source & freshness</summary>
+
+- Source: OpenAI Academy — Writing with ChatGPT; Improve Your Papers Without Losing Your Voice; repository synthesis
+- Status: official-derived + repository-synthesis
+- Last verified: 2026-09-14
+- Last updated: 2026-09-14
+- Full references: [`../90-research/sources.md`](../90-research/sources.md)
+
+</details>
+
 ```text
 不要直接重写。
 
