@@ -1,80 +1,136 @@
 # GPT Prompt Library
 
-一个面向现代 GPT（当前优先 **GPT-6 Astra / GPT-5.6**）的高质量提示词仓库。
-
-本仓库不追求堆积“你是一位世界级专家”式角色扮演 Prompt，而是尽量保存真正可观察、可复用、可验证的提示词约束：目标、受众、材料、结构、风格、事实边界、完成标准与自我编辑流程。
+一个面向现代 GPT 的结构化 Prompt 仓库。当前优先维护 **GPT-6 Astra / GPT-5.6** 的高质量写作 Prompt，后续可继续扩展 research、coding、agents 等任务族。
 
 > Last updated: 2026-09-14
 
-## 当前内容
+## Repository structure
 
-- [`writing/GPT6_WRITING_PROMPTS.md`](writing/GPT6_WRITING_PROMPTS.md)：GPT 写作 Prompt 总库。覆盖 GPT-6 写作原则、自然写作、教科书、学术、技术、博客、小说、邮件、营销文案、风格模仿、自我编辑等。
-- [`writing/GPT6_WRITING_SYSTEM_PROMPT.md`](writing/GPT6_WRITING_SYSTEM_PROMPT.md)：可直接复制使用的 GPT-6 总写作 System Prompt。
+```text
+GPT-prompt/
+├── README.md
+└── writing/
+    ├── README.md
+    ├── 00-core/
+    │   ├── system-prompt.md
+    │   └── task-specification.md
+    ├── 01-style/
+    │   ├── natural-prose.md
+    │   ├── style-profile.md
+    │   └── chinese-formal.md
+    ├── 02-long-form/
+    │   ├── textbook-monograph.md
+    │   └── article-blog.md
+    ├── 03-academic/
+    │   ├── general-academic.md
+    │   ├── academic-english.md
+    │   ├── literature-review.md
+    │   └── paper/
+    │       ├── abstract.md
+    │       ├── introduction.md
+    │       ├── related-work.md
+    │       ├── method.md
+    │       ├── experiments.md
+    │       └── rebuttal.md
+    ├── 04-technical/
+    │   └── technical-writing.md
+    ├── 05-professional/
+    │   ├── email.md
+    │   └── marketing-copy.md
+    ├── 06-creative/
+    │   └── fiction-storytelling.md
+    ├── 07-editing/
+    │   ├── diagnostic-edit.md
+    │   ├── self-revision.md
+    │   └── fact-citation-check.md
+    └── 90-research/
+        ├── sources.md
+        ├── model-notes.md
+        └── anti-patterns.md
+```
+
+## 分类逻辑
+
+目录按“Prompt 要解决什么问题”划分，而不是按某次聊天或某个来源堆文件：
+
+- **00-core**：任何写作任务都可以叠加的基础层。
+- **01-style**：只控制语言、节奏、作者风格与中文表达。
+- **02-long-form**：解决跨章节、长程一致性和知识组织。
+- **03-academic**：论文、survey、Academic English；`paper/` 再细到论文具体章节。
+- **04-technical**：机制、系统、算法、公式、shape 和数据流表达。
+- **05-professional**：邮件、商业文案等专业沟通。
+- **06-creative**：小说、故事和连续叙事。
+- **07-editing**：与生成初稿分离的诊断、revision、事实/引用核验。
+- **90-research**：Prompt 来源、模型行为差异、反模式研究；不作为日常直接调用入口。
+
+## 最推荐的组合方式
+
+不要寻找一个不断膨胀的“万能 Prompt”。推荐按层组合：
+
+```text
+00-core/system-prompt.md
++ 00-core/task-specification.md
++ 一个任务专项 Prompt
++ 必要的 style Prompt
++ 独立 editing / fact-check pass
+```
+
+例如写一篇机器人论文 Method：
+
+```text
+00-core/system-prompt.md
++ 00-core/task-specification.md
++ 03-academic/paper/method.md
++ 04-technical/technical-writing.md
++ 07-editing/fact-citation-check.md
+```
+
+写一本技术教材章节：
+
+```text
+00-core/system-prompt.md
++ 02-long-form/textbook-monograph.md
++ 04-technical/technical-writing.md
++ 01-style/chinese-formal.md
++ 07-editing/self-revision.md
+```
 
 ## 核心原则
 
-相比旧式 Prompt：
+相比旧式：
 
 ```text
 You are a world-class award-winning writer with 30 years of experience...
 ```
 
-更推荐描述可观察的写作约束：
+更推荐控制可观察变量：
 
 ```text
-读者是谁
-→ 写作目标是什么
-→ 哪些材料可信
-→ 哪些内容不能自行假设
-→ 信息应按什么关系展开
-→ 语言应是什么样
-→ 哪些表达应避免
-→ 什么状态才算写完
+目标
+→ 受众
+→ 材料与事实边界
+→ 结构
+→ 风格
+→ 禁止项
+→ 验收标准
+→ 独立修订与核验
 ```
 
-现代 GPT 已经不太需要虚构资历来“进入角色”。更稳定的方式，是把任务定义、信息边界、文本结构和验收标准写清楚。
+现代 GPT 已经不太需要靠虚构资历“进入角色”。更稳定的方法是把任务定义、信息边界、文本结构和完成标准写清楚。
 
-## 使用方式
-
-最推荐三层组合：
-
-1. 将 `GPT6_WRITING_SYSTEM_PROMPT.md` 作为长期写作规则。
-2. 根据当前任务，从 `GPT6_WRITING_PROMPTS.md` 选择教科书 / 学术 / 技术 / 博客等专项 Prompt。
-3. 完成初稿后，再使用“二次自我编辑 Prompt”进行独立 revision pass。
-
-对于长文，不建议一次性要求“写 10000 字”。更稳定的流程是：
-
-```text
-Plan → Draft → Inspect → Revise → Fact-check → Finalize
-```
-
-## 来源原则
-
-本仓库优先级大致为：
+## 来源优先级
 
 1. OpenAI 官方模型 / prompting / writing guidance
 2. OpenAI Academy
 3. OpenAI Developer Community
 4. GitHub 高质量 Prompt repositories
 5. Reddit / PromptEngineering 社区中的高质量实践
-6. 其他近期 GPT-6 专门资料
+6. 近期针对 GPT-6 的实测资料
 
-社区 Prompt 不会无条件照搬。明显为了“骗 AI 检测器”而要求故意制造语法错误、随机矛盾、异常 perplexity / burstiness 的做法，不作为高质量正式写作默认策略。
+详见 [`writing/90-research/sources.md`](writing/90-research/sources.md)。
 
-## 维护方向
+## Maintenance
 
-后续可继续加入：
+新 Prompt 进入仓库时先判断它属于哪一种“能力层”，不要默认继续往根目录加文件。
 
-- 科研论文各章节 Prompt（Abstract / Introduction / Related Work / Method / Experiments / Rebuttal）
-- 教科书长期写作工作流
-- Literature Review / Survey
-- 技术文档与 API Documentation
-- 中文正式写作
-- 英文 Academic Writing
-- Rewrite / Proofread / Copyedit
-- Prompt evaluation / A-B testing
-- 不同 GPT 模型的提示词差异
-
-## License / attribution
-
-Prompt 本身会尽量注明原始思想来源。对于来自社区或公开仓库的内容，本仓库优先进行归纳、改写和结构化，而非大段复制原文。
+如果一个新 Prompt 同时涉及多个目录，优先拆成可组合模块，而不是复制多份。模型专属差异统一记录到 `90-research/model-notes.md`，只有差异足够大时才建立新的 model-specific 子目录。
